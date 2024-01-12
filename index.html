@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="viewport" content="width=device-width, initial-scale=1">
+    <title>C.S.I proj</title>
+    <style>
+        img {
+            border-radius: 10%;
+        }
+
+        u {
+            color: blue;
+        }
+
+        table {
+            color: burlywood;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white;
+        }
+
+        .tebal {
+            border: 3px solid black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #notification {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        #closeBtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <link rel="shortcut icon" href="banner2.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">tool cyber</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">tools cr v2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tool-DDoS.html">ddos tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VPN1.html">vpn page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- close button -->
+    <div id="notification">
+        <div id="closeBtn" onclick="closeNotification()">&times;</div>
+        <p><strong>David Heinemeier Hansson (DHH):</strong> “Anda tidak dapat mempelajari semuanya. Anda tidak dapat
+            menyimpan semua konsep yang sepenuhnya berkembang di kepala Anda. Terlebih lagi, Anda seharusnya tidak
+            melakukannya. Saat kami memperkecil konsep yang memang sudah mendasar, kami memberi ruang untuk ide baru
+            yang lebih besar.”</p>
+    </div>
+
+    <script>
+        function closeNotification() {
+            var notification = document.getElementById('notification');
+            notification.style.animation = 'fadeOut 0.5s ease-out';
+            setTimeout(function () {
+                notification.style.display = 'none';
+                notification.style.animation = '';
+            }, 500);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var notification = document.getElementById('notification');
+
+            // Show the notification
+            notification.style.display = 'block';
+
+            // Close the notification when close button is clicked
+            var closeBtn = document.getElementById('closeBtn');
+            closeBtn.addEventListener('click', closeNotification);
+        });
+    </script>
+    <!-- awalan -->
+    <center>
+        <img src="C.S.I 1.jpg" width="400px" height="300px">
+
+        <h1>welcome cyber security to C.S.I proj ver.2</h1>
+        <h3>di web ini menyediakan tools yang biasa digunakan para cyber security, mau yang pemula maupun yang jago</h3>
+        <p>ini dia tools yang biasa digunakan para cyber security</p>
+    </center>
+
+    <!-- inti -->
+    <img src="thc hydra.jpg" align="top">
+    <h4>1.thc hydra</h4>
+    <p>
+    <h5>thc hydra merupakan tools yang biasa digunakan untuk meretas / mengcrack password, atau dari sumber <a
+            href="https://anditoyugowicaksono.wordpress.com/2017/03/01/thc-hydra/">link ini</a>
+        mengatakan bahwa <u>THC-Hydra adalah tool yang digunakan oleh security consultants atau penetration tester untuk
+            melaukan authentikasi login menggunakan user – user dan password secara illegal.</u></h5>
+    </p>
+    <p>
+    <h5>dan bagaimana cara mendownload tool nya? kalian bisa menggunakan git / svn</h5>
+    </p>
+    <a class="icon-link" href="https://anditoyugowicaksono.wordpress.com/2017/03/01/thc-hydra/">
+        <h4>link download</h4>
+        <svg class="bi" aria-hidden="true">
+            <use xlink:href="#arrow-right"></use>
+        </svg>
+    </a>
+    <p>
+    <h5>screen shot contoh:</h5>
+    </p>
+    <img src="hydra2.png" width="400px" height="300px">
+    <hr class="tebal">
+    <!-- tool ke dua -->
+    <img src="wifite.jpg" align="top">
+    <h4>2.wifite</h4>
+    <p>
+    <h5>menurut <a class="icon-link" href="https://www.kali.org/tools/wifite/">offsec pembuat kali linux</a> bahwa
+        wifite adalah <u>"Wifite adalah alat untuk mengaudit jaringan nirkabel terenkripsi WEP atau WPA. Ia
+            menggunakan alat aircrack-ng, pyrit, reaver, tshark untuk melakukan audit."</u>
+    </h5>
+    </p>
+    <p>
+    <h5>screen shot contoh:</h5>
+    </p>
+    <img src="wifite2.png" width="400px" height="300px">
+    <p>
+    <h6><u>dan bahasa simple nya adalah wifite ini tools untuk mengcrack password wifi yang terdetek laptop kita dan
+            bagaimana cara mendownload nya?</u></h6>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">link download</th>
+                <th scope="col">command</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><a href="https://github.com/derv82/wifite">github</a></td>
+                <td>wget https://raw.github.com/derv82/wifite/master/wifite.py</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><a href="https://www.kali.org/tools/wifite/">kali.org</a></td>
+                <td>sudo apt install wifite</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr class="tebal">
+    <!-- tools 3 -->
+    <img src="burpsuite.jpg" align="top">
+    <h4>3.burpsuite</h4>
+    <p>
+    <h5>yang ketiga adalah tools burpsuite yang menurut wikipedia, <u>"Burp Suite adalah aplikasi keamanan perangkat
+            lunak yang digunakan untuk pengujian penetrasi aplikasi web. Tersedia versi perangkat lunak gratis dan
+            berbayar. Perangkat lunak ini dikembangkan oleh perusahaan PortSwigger."</u></h5>
+    </p>
+    <p>
+    <h6>dan tools ini juga berfungsi di berbagai os misalnya, windows, linux, mac OS. jadi untuk kalian yang bertanya
+        dimana link download nya?.</h6>
+    </p>
+    <p>
+    <h3><a href="https://portswigger.net/burp/communitydownload" class="link-info">link download!</a></h3>
+    </p>
+    <p>
+    <h5>screen shot contoh:</h5>
+    </p>
+    <img src="burpsuite2.png" width="400px" height="300px">
+    <!-- COMMAND HR -->
+    <hr class="tebal">
+
+    <footer>
+        <p>Author: ethica</p>
+        <p>dzakifairuz991@protonmail.com</p>
+    </footer>
+    <p>
+    <h4>page created with.. bootstrap, and github thanks for all in world</h4>
+    </p>
+    <!-- COMMAND HR -->
+    <hr class="tebal">
+    <!-- copyright -->
+    © copyright greenwolf team 2024.
+    <p>
+    <h6>pesan :</h6>
+    </p>
+    <p>
+    <h6>ayooo yoo dei hekel jangan meng depes awokawokawok</h6>
+    </p>
+    <p>heyyyo broh</p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
